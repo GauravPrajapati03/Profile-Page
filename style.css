@@ -27,7 +27,7 @@ html, body {
     border-radius: 12px;
     max-height: fit-content;
     position: fixed;
-    left: 15%;
+    left: 17.5%;
 }
 
 .social img {
@@ -44,5 +44,5 @@ html, body {
     background-color: rgb(82, 64, 33);
     border-radius: 12px;
     position: relative;
-    left: 13%;
+    left: 15%;
 }
