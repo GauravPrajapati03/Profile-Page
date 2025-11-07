@@ -9,7 +9,7 @@ html, body {
     background: #000;
     color: #a0a0a0;
     line-height: 1.6;
-    font-family: Montserrat;
+    font-family: "Montserrat";
 }
 
 /* Sidebar */
@@ -31,6 +31,7 @@ html, body {
     position: fixed;
     left: 17.5%;
     padding: 30px;
+    border: 1px solid #3a3a3a;
 }
 
 /* Profile */
@@ -51,7 +52,7 @@ html, body {
     color: #a0a0a0;
     font-size: 14px;
     margin-top: 5px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .profile p {
@@ -122,8 +123,233 @@ html, body {
 .main-content {
     background: #1e1e1e;
     width: 60%;
-    background-color: rgb(82, 64, 33);
     border-radius: 12px;
     position: relative;
-    left: 170px;
+    left: 15%;
+    padding: 30px;
+    min-height: 80vh;
+    border: 1px solid #3a3a3a;
+}
+
+.heading {
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* navbar */
+
+#nav-bar {
+    border-bottom: 1.5px solid #3a3a3a;
+    padding-bottom: 10px;
+}
+
+#nav-bar nav {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: #FFBF00;
+}
+
+
+/* About */
+
+.heading {
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 25px 0 10px 0 ;
+}
+
+#about p {
+    color: #a0a0a0;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.underline {
+    height: 2px;
+    width: 50px;
+    background-color: #FFBF00;
+    border-radius: 5px;
+    margin-bottom: 20px
+}
+
+
+/* Skills */
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+#skills li {
+    height: 8vw;
+    width: 8vw;
+    background-color: #000;
+    color: #e0e0e0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#skills li img {
+    height: 3.5vw;
+    width: 3.5vw;
+    filter: brightness(0) saturate(100%) invert(85%) sepia(51%) saturate(1290%) hue-rotate(1deg) brightness(104%) contrast(95%);
+    margin-bottom: 3px;
+}
+
+#skills li:hover {
+    transform: scale(1.08);
+    border: 1px solid #fff;
+}
+
+
+/* Education */
+#education {
+    position: relative;
+}
+.edu {
+    margin-left: 30px;
+}
+
+.timeline {
+    position: absolute;
+    left: 10px;
+    top: 10;
+    height: 75%;
+    width: 2px;
+    background-color: #3a3a3a;
+}
+.circle {
+    position: absolute;
+    left: 4px;
+    height: 15px;
+    width: 15px;
+    top: 10;
+    border-radius: 50%;
+    border: 4px solid #FFBF00;
+    background-color: #1e1e1e;
+}
+
+.edu p {
+    color: #a0a0a0;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.edu h3 {
+    color: #e0e0e0;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.edufirst {
+    margin-bottom: 30px;
+}
+
+.edu p:nth-child(5) {
+    color: #FFBF00;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.grade {
+    transition: all 0.3s ease-in-out;
+}
+
+.grade:hover {
+    transform: scale(1.03);
+}
+
+/* Connect */
+
+.touch {
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 25px 0 10px 0 ;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        left: 10%;
+    }
+
+    .main-content {
+        left: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        position: static;
+        width: 90%;
+        max-width: none;
+        left: auto;
+        min-height: auto;
+    }
+
+    .main-content {
+        position: static;
+        width: 90%;
+        left: auto;
+        min-height: auto;
+    }
+
+    
+    .profile img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .profile h2 {
+        font-size: 1.5rem;
+    }
+
+    .profile p {
+        font-size: 0.8rem;
+    }
+
+    .label, .value {
+        font-size: 1rem;
+    }
 }
