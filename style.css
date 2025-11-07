@@ -6,5 +6,43 @@
 
 html, body {
     height: 100vh;
-    width: 100vw;
+    background: #000;
+    color: #a0a0a0;
+}
+
+/* Sidebar */
+.container {
+    max-width: 75%;
+    display: flex;
+    background: #000;
+    gap: 30px;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.sidebar {
+    background: #1e1e1e;
+    width: 20%;
+    border-radius: 12px;
+    max-height: fit-content;
+    position: fixed;
+    left: 15%;
+}
+
+.social img {
+    height: 25px;
+    width: 30px;
+    filter: brightness(0) saturate(100%) invert(79%) sepia(5%) saturate(15%) hue-rotate(340deg) brightness(81%) contrast(89%);
+}
+
+
+/* Main-content */
+.main-content {
+    background: #1e1e1e;
+    width: 60%;
+    background-color: rgb(82, 64, 33);
+    border-radius: 12px;
+    position: relative;
+    left: 13%;
 }

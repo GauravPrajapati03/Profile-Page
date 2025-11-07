@@ -7,6 +7,105 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Profile Page</p>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile">
+                <img width="100px" height="100px" src="./assets/Gaurav.jpg" alt="Gaurav">
+                <h2>Gaurav Prajapati</h2>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="contact">
+                <div class="email">
+                    <h3 class="label">Email</h3>
+                    <a href="mailto:gauravprajapati9370@gmail" class="value">gauravprajapati9370@gmail.com</a>
+                </div>
+                <div class="phone">
+                    <h3 class="label">Phone</h3>
+                    <a href="tel:+91-1234567890" class="value">+91-9561408741</a>
+                </div>
+                <div class="location">
+                    <h3 class="label">Location</h3>
+                    <p class="value">Pune, Maharashtra</p>
+                </div>
+            </div>
+            <div class="social">
+                <a href=""><img src="https://simpleicons.org/icons/github.svg" alt=""></a>
+                <a href=""><img src="https://simpleicons.org/icons/x.svg" alt=""></a>
+                <a href=""><img src="https://www.svgrepo.com/show/144030/linkedin-square-logo.svg" alt=""></a>
+                <a href=""><img src="https://simpleicons.org/icons/discord.svg" alt=""></a>
+                <a href=""><img src="https://simpleicons.org/icons/whatsapp.svg" alt=""></a>
+                
+            </div>
+        </div>
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="nav-bar">
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#connect">Connect</a>
+                </nav>
+            </div>
+
+            <section>
+                <div id="about">
+                    <h2>About Me</h2>
+                    <p>I am a frontend developer with a passion for creating beautiful and functional websites.</p>
+                </div>
+            </section>
+
+            <section>
+                <div id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>Github</li>
+
+                    </ul>
+                </div>
+            </section>
+            
+            <section>
+                <div id="education">
+                    <h2>Education</h2>
+                    <div class="edu">
+                        <div class="edufirst">
+                            <p>2021-2025</p>
+                            <h3>Bachelor of Engineering(B.E) in Computer Engineering</h3>
+                            <p>Trinity College of Engineering & Research, Pune</p>
+                            <p>Grade: 8.08 CGPA</p>
+                        </div>
+                        <div class="edusecond">
+                            <p>2020-2021</p>
+                            <h3>HSC Maharashtra Board (12th)</h3>
+                            <p>Rosary Jr. College, Pune</p>
+                            <p>Grade: 74.83%</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div id="connect">
+                    <h2>Get in Touch</h2>
+                    <form action="">
+                        <div>
+                            <input type="text" placeholder="Name">
+                            <input type="tel" placeholder="Phone no">
+                        </div>
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+    </div>
 </body>
 </html>
