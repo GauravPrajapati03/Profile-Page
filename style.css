@@ -303,10 +303,10 @@ ul {
 }
 
 .project-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 18px;
-    margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-bottom: 30px;
 }
 
 .project-card {
@@ -329,37 +329,37 @@ ul {
 }
 
 .project-details {
-    padding: 10px 10px 0 10px;
-    position: relative;
+  padding: 10px 10px 0 10px;
+  position: relative;
 }
 
 .project-card h3 {
-    margin-bottom: 5px;
-    font-weight: 600;
-    font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .info {
-    font-size: 0.8rem;
-    font-weight: 400;
-    color: #a0a0a0;
-    margin-bottom: 12px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #a0a0a0;
+  margin-bottom: 12px;
 }
 
 .tech {
-    color: #FFBF00;
-    background-color: rgba(239, 205, 103, 0.089);
-    padding: 3px 8px;
-    font-weight: 600;
-    font-size: 0.75rem;
-    border: 2px solid #3a3a3a;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    display: inline-block;
+  color: #ffbf00;
+  background-color: rgba(239, 205, 103, 0.089);
+  padding: 3px 8px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  border: 2px solid #3a3a3a;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: inline-block;
 }
 
 .tech:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .project-card:hover {
@@ -388,14 +388,13 @@ ul {
 
 .btn:hover {
   transform: scale(0.85);
-  background: #FFBF00;
+  background: #ffbf00;
   cursor: pointer;
 }
 
 .btn:hover a {
   color: #000;
 }
-
 
 /* Connect */
 
@@ -490,7 +489,6 @@ form button:hover {
   border: 1px solid #fff;
 }
 
-
 /* Responsive */
 
 @media screen and (max-width: 1400px) {
@@ -529,18 +527,17 @@ form button:hover {
 }
 
 @media screen and (max-width: 994px) {
-    .sidebar {
-      left: 3%;
-    }
-  
-    .main-content {
-      left: 15%;
-    }
+  .sidebar {
+    left: 3%;
+  }
+
+  .main-content {
+    left: 15%;
+  }
 }
 
-@media (max-width: 778px) {
-
-.container {
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
     align-items: center;
   }
@@ -564,7 +561,7 @@ form button:hover {
     width: 30vw;
     height: 30vw;
   }
-.profile h2 {
+  .profile h2 {
     font-size: 2.5rem;
   }
 
@@ -572,7 +569,7 @@ form button:hover {
     font-size: 1.25rem;
   }
 
-.social img {
+  .social img {
     height: 40px;
     width: 40px;
     margin: 10px 15px 3px 0;
@@ -594,7 +591,6 @@ form button:hover {
     font-size: 1rem;
   }
 }
-
 
 @media (max-width: 480px) {
   .container {
