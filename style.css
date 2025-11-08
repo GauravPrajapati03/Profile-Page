@@ -387,7 +387,7 @@ ul {
 }
 
 .btn:hover {
-  transform: scale(1.05);
+  transform: scale(0.85);
   background: #FFBF00;
   cursor: pointer;
 }
@@ -495,12 +495,12 @@ form button:hover {
 
 @media screen and (max-width: 1400px) {
   .sidebar {
-    left: 15%;
+    left: 10%;
     min-height: 85vh;
   }
 
   .main-content {
-    left: 15%;
+    left: 10%;
   }
 }
 
@@ -518,7 +518,7 @@ form button:hover {
 
 @media screen and (max-width: 1024px) {
   .sidebar {
-    left: 8%;
+    left: 10%;
     min-height: 85vh;
   }
 
@@ -528,9 +528,9 @@ form button:hover {
   }
 }
 
-@media screen and (max-width: 945px) {
+@media screen and (max-width: 994px) {
     .sidebar {
-      left: 5%;
+      left: 3%;
     }
   
     .main-content {
@@ -538,9 +538,7 @@ form button:hover {
     }
 }
 
-
-
-@media (max-width: 768px) {
+@media (max-width: 778px) {
 
 .container {
     flex-direction: column;
@@ -610,6 +608,14 @@ form button:hover {
 
   .sidebar {
     width: 95%;
+  }
+
+  #nav-bar {
+    display: none;
+  }
+
+  #about {
+    margin-top: -20px;
   }
 
   .profile h2 {
