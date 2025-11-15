@@ -67,3 +67,39 @@ scrollBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+
+
+// Form
+
+const form = document.getElementById('connect');
+const submitBtn = document.getElementById('submitBtn');
+const successPopup = document.getElementById('successPopup');
+
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let name = e.target.name.value;
+    let phone = e.target.phone.value;
+    let email = e.target.email.value;
+    let message = e.target.message.value;
+
+    let formData = {
+        name,
+        phone,
+        email,
+        message
+    }
+    console.log(formData);
+})
+
+
+// Loader
+let percent = document.getElementById("percent");
+let counter = 0;
+let interval = setInterval(() => {
+    counter++;
+    percent.textContent = counter + "%";
+    if (counter >= 100) clearInterval(interval);
+}, 50);

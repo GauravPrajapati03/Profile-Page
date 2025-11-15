@@ -14,6 +14,15 @@
 </head>
 
 <body>
+
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="percentage" id="percent">0%</div>
+        <div class="bar">
+            <div class="bar-inner"></div>
+        </div>
+    </div>
+
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
@@ -40,6 +49,14 @@
                     <p class="value">Pune, Maharashtra</p>
                 </div>
             </div>
+
+            <!-- Resume -->
+            <div class="resume">
+                <a href="./assets/Gaurav_Prajapati 9561408741.pdf" download="Gaurav resume">
+                    <span class="gradient-text">Download Resume</span>
+                </a>
+            </div>
+
             <!-- Social -->
             <div class="social">
                 <a href="https://github.com/GauravPrajapati03/"><img src="https://simpleicons.org/icons/github.svg"
@@ -50,7 +67,6 @@
                 <a href=""><img src="https://simpleicons.org/icons/discord.svg" alt=""></a>
                 <a href="https://wa.me/9561408741" target="_blank"><img src="https://simpleicons.org/icons/whatsapp.svg"
                         alt=""></a>
-
             </div>
         </aside>
 
@@ -226,20 +242,29 @@
                 <div class="line"></div>
                 <form action="">
                     <div>
-                        <input type="text" placeholder="Your Good Name?">
-                        <input type="tel" placeholder="Your Phone Number?">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Good Name?" required>
+                            <!-- <small class="error">hello world</small> -->
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone Number?" required>
+                        </div>
                     </div>
-                    <input type="email" placeholder="you@example.com">
-                    <textarea rows="5" placeholder="Type your message here..."></textarea>
-                    <button type="submit">Send Message</button>
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                    <textarea rows="5" name="message" placeholder="Type your message here..."></textarea>
+                    <button type="submit">
+                        <span class="btn-text" id="submitBtn">Send Message</span>
+                        <span class="loader"></span>
+                    </button>
                 </form>
+
+                <div style="display: none;" id="successPopup">Message Sent Successfully! 🎉</div>
             </section>
 
             <button id="scrollToTopBtn">↑</button>
         </main>
     </div>
-    
-    
+
     <script src="script.js"></script>
 
 </body>
