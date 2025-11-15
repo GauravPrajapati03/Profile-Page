@@ -577,6 +577,18 @@ form button:hover {
   }
 }
 
+@media screen and (max-width: 1055px) {
+  .sidebar {
+    left: 8%;
+    width: 25%;
+    min-height: 85vh;
+  }
+
+  .main-content {
+    left: 15%;
+    height: fit-content;
+  }
+}
 @media screen and (max-width: 1024px) {
   .sidebar {
     left: 7%;
@@ -589,7 +601,22 @@ form button:hover {
   }
 }
 
+
 @media screen and (max-width: 994px) {
+  .sidebar {
+    left: 5%;
+  }
+
+  .main-content {
+    left: 15%;
+  }
+
+  #scrollToTopBtn {
+    position: fixed;
+    right: 0;
+  }
+}
+@media screen and (max-width: 874px) {
   .sidebar {
     left: 3%;
   }
@@ -604,7 +631,7 @@ form button:hover {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 790px) {
   .container {
     flex-direction: column;
     align-items: center;
